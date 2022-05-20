@@ -1,0 +1,20 @@
+server:
+  port: 8999
+
+spring:
+  application:
+    name: EurekaServer
+
+eureka:
+  instance:
+    hostname: localhost
+    ip-address: 127.0.0.1
+    instance-id: EurekaServer
+  server:
+    use-read-only-response-cache: false
+    eviction-interval-timer-in-ms: 5000
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+#    service-url:
+#      defaultZone: http://${eureka.instance.ip-address}:${server.port}/eureka/
